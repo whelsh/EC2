@@ -9,6 +9,8 @@ Steps followed:
 	sudo apt install apache2 -y
 4) Start the Apache web server by following commands:
 	sudo systemctl enable apache2
-5) Modify the contents of index.html with file path /var/www/html/index.html using sudo commands.
-6) Modify the rules of the Security group such that its ports 22, 80 and 443 are open for all traffic.
-7) By use of the public IP of the instance, the created web page by index.html can be accessed.
+5) To check the running status of the Apache web server, use command:
+   	sudo systemctl status apache2
+7) Modify the contents of index.html with file path /var/www/html/index.html using sudo commands.
+8) Modify the rules of the Security group such that its ports 22, 80 and 443 are open for all traffic.
+9) By use of the public IP of the instance, the created web page by index.html can be accessed.
